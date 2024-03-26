@@ -7,22 +7,133 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
-  },
-  {
-    question: "Can I get a refund?",
+    question: "Who retains ownership of the character art?",
     answer: (
-      <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
-      </p>
+      <div className="space-y-2 leading-relaxed">
+        You retain full ownership of the character art created using our
+        service. We provide you with a commercial license, granting you the
+        rights to use the art for any purpose.
+      </div>
     ),
   },
   {
-    question: "I have another question",
+    question: "How can I obtain an invoice for my purchase?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">
+        To receive an invoice for your purchase, simply navigate to the invoice
+        page after completing your transaction. Enter your details and save the
+        invoice as a PDF for your records.
+      </div>
+    ),
+  },
+  {
+    question: "Is there a limit to the number of characters I can create?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        No, there are no restrictions on the number of characters you can create
+        using our service. Feel free to create as many characters as you need.
+      </div>
+    ),
+  },
+  {
+    question: "What art styles are available for character creation?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        We offer a wide range of art styles to suit your preferences. From
+        realistic to cartoonish, fantasy to sci-fi, you'll find various styles
+        to bring your characters to life.
+      </div>
+    ),
+  },
+  {
+    question: "Can I customize the appearance of my characters?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Yes, our platform allows you to customize every aspect of your
+        character's appearance. From their facial features to their clothing and
+        accessories, you have full control over the design process.
+      </div>
+    ),
+  },
+  {
+    question: "Do I need artistic skills to use your service?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        No artistic skills are required to use our service. Our user-friendly
+        interface and intuitive tools make it easy for anyone to create stunning
+        character art.
+      </div>
+    ),
+  },
+  {
+    question: "What is the process to access fullbody images?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Our free character creator allows you to generate preview portraits. To
+        access and download fullbody images, you'll need to make a one-time
+        payment.
+      </div>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        We accept a variety of payment methods, including credit/debit cards,
+        PayPal, and bank transfers. Choose the option that is most convenient
+        for you during the checkout process.
+      </div>
+    ),
+  },
+  {
+    question: "Can I cancel my character art purchase?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        If you haven't downloaded the character art and it's within 14 days of
+        purchase, you can request a refund. However, once the art is downloaded,
+        the purchase becomes final and non-refundable.
+      </div>
+    ),
+  },
+  {
+    question: "What is your refund policy?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        We offer a full refund within 14 days of purchase if the character art
+        has not been downloaded. After the 14-day period or if the art has been
+        downloaded, refunds are not available.
+      </div>
+    ),
+  },
+  {
+    question: "Are there any restrictions on the usage of the character art?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        There are no restrictions on how you can use the character art created
+        using our service. You have the freedom to use the art in any way you
+        see fit, without limitations.
+      </div>
+    ),
+  },
+  {
+    question: "Is there a customer support team available for assistance?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Yes, we have a dedicated customer support team available to assist you
+        with any questions or concerns you may have. Feel free to reach out to
+        us via email or live chat for prompt assistance.
+      </div>
+    ),
+  },
+  {
+    question: "Can I request custom features or art styles?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        While we strive to offer a diverse range of features and art styles, we
+        are always open to feedback and suggestions from our users. If you have
+        specific requests or ideas, please don't hesitate to let us know, and
+        we'll do our best to accommodate them.
+      </div>
     ),
   },
 ];

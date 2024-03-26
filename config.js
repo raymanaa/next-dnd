@@ -2,15 +2,15 @@ import themes from "daisyui/src/theming/themes.js";
 
 const config = {
   // REQUIRED
-  appName: "Online YouTube Thumbnail Maker",
+  appName: "DND Character Art Creator",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "Generate free thumbnails for your YouTube videos. Get more views and subscribers... Free!",
+    "Craft your character's portrait with our free DND Character Art Creator and let our AI-artist bring it to life. Perfect for your next Dungeons and Dragons campaign!",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "onlineyoutubethumbnailmaker.com",
+  domainName: "dndcharacterart.com",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
-    id: "",
+    id: "841a8132-9229-4cfa-b8c0-e21bde0c0e87",
     // Hide Crisp by default, except on route "/". Crisp is toggled with <ButtonSupport/>. If you want to show Crisp on every routes, just remove this below
     onlyShowOnRoutes: ["/"],
   },
@@ -24,20 +24,21 @@ const config = {
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Wanderer",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Ideal for shorter campaigns, offering a basic package to get you started.",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 79,
+        price: 6,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 99,
+        priceAnchor: 9,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "1 Character",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "10 Unique Images" },
+          { name: "1 Backdrop Selection" },
+          { name: "1 Attire Design" },
+          { name: "24 Hours Fulfillment Time" },
         ],
       },
       {
@@ -47,29 +48,28 @@ const config = {
           process.env.NODE_ENV === "development"
             ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_456",
-        name: "Advanced",
-        description: "You need more power",
-        price: 99,
-        priceAnchor: 149,
+        name: "Adventurer",
+        description: "Tailored for longer campaigns, providing a comprehensive package for immersive storytelling.",
+        price: 19,
+        priceAnchor: 29,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "1 Character",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "30 Unique Images" },
+          { name: "3 Different Backdrop Selections" },
+          { name: "3 Attire Designs" },
+          { name: "24 Hours Fulfillment Time" },
         ],
       },
     ],
   },
-  aws: {
-    // If you use AWS S3/Cloudfront, put values in here
-    bucket: "bucket-name",
-    bucketUrl: `https://bucket-name.s3.amazonaws.com/`,
-    cdn: "https://cdn-id.cloudfront.net/",
-  },
+  // aws: {
+  //   // If you use AWS S3/Cloudfront, put values in here
+  //   bucket: "bucket-name",
+  //   bucketUrl: `https://bucket-name.s3.amazonaws.com/`,
+  //   cdn: "https://cdn-id.cloudfront.net/",
+  // },
   mailgun: {
     // subdomain to use when sending emails, if you don't have a subdomain, just remove it. Highly recommended to have one (i.e. mg.yourdomain.com or mail.yourdomain.com)
     subdomain: "mg",
@@ -84,10 +84,10 @@ const config = {
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you any other theme than light/dark, you need to add it in config.tailwind.js in daisyui.themes.
-    theme: "dark",
+    theme: "cupcake",
     // REQUIRED — This color will be reflected on the whole app outside of the document (loading bar, Chrome tabs, etc..). By default it takes the primary color from your DaisyUI theme (make sure to update your the theme name after "data-theme=")
     // OR you can just do this to use a custom color: main: "#f37055". HEX only.
-    main: themes[`[data-theme=dark]`]["primary"],
+    main: themes[`[data-theme=cupcake]`]["primary"],
   },
   auth: {
     // REQUIRED — the path to log in users. It's use to protect private routes (like /dashboard). It's used in apiClient (/libs/api.js) upon 401 errors from our API

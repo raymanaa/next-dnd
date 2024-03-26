@@ -47,17 +47,17 @@ const Problem = () => {
         <section className="bg-neutral text-neutral-content">
             <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
                 <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-                    Crappy thumbnails are killing your viewer count.
+                  Crappy art is ruining your campaign.
                 </h2>
-                {/*<p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-10">*/}
-                {/*    {"Don't let viewers pass you by because you have a crappy thumbnail when you could be rapidly generate multiple amazing thumbnails in just a few seconds."}*/}
-                {/*</p>*/}
+                <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-10">
+                   {"Don't waste hours struggling to find unique character art. Focus on crafting your epic adventure."}
+                </p>
                 <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
                     Turn this...
                 </h2>
 
                 <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 md:mb-8">
-                    <Step emoji="🧑‍💻" text="Hours trying to create the perfect thumbnail"/>
+                    <Step emoji="🧑‍💻" text="Hours trying to create the perfect portrait"/>
 
                     <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90"/>
 
@@ -65,7 +65,7 @@ const Problem = () => {
 
                     <Arrow extraStyle="md:-scale-x-100 md:-rotate-90"/>
 
-                    <Step emoji="😔" text="Quit posting your content"/>
+                    <Step emoji="😔" text="Settling for generic images"/>
                 </div>
 
                 <div className={"btn-gradient p-3 rounded"}>
@@ -76,18 +76,18 @@ const Problem = () => {
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
-                        <Step emoji="🧑‍🎨" text="Rapidly generate multiple amazing thumnails"/>
+                        <Step emoji="🧑‍🎨" text="Rapidly customize your character for free"/>
 
                         <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90"/>
 
-                        <Step emoji="🫰" text="Generate powerful thumbnails in a snap"/>
+                        <Step emoji="🫰" text="Let our AI-Artist handle the painting"/>
 
                         <Arrow extraStyle="md:-scale-x-100 md:-rotate-90"/>
 
-                        <Step emoji="🚀" text="Strap your viewership to a rocket"/>
+                        <Step emoji="🚀" text="Download your custom-tailored art"/>
                     </div>
-                    <div>
-                        <ButtonSignin extraStyle="btn-primary" text={"Create your Thumbnail Free"}/>
+                    <div className="mt-3">
+                        <ButtonSignin extraStyle="btn-primary" text={"Enter character art creator"}/>
                     </div>
                 </div>
             </div>
