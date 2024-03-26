@@ -1,6 +1,5 @@
 import ButtonAccount from "@/components/ButtonAccount";
-import ThumbnailGenerator from "@/components/ThumbnailGenerator";
-import ImageGallery from "@/components/ImageGallery";
+import CharacterEditor from "@/components/custom/CharacterEditor";
 export const dynamic = "force-dynamic";
 
 // This is a private page: It's protected by the layout.js component which ensures the user is authenticated.
@@ -11,8 +10,9 @@ export default async function Dashboard() {
         <main className="min-h-screen p-8 pb-24">
             <section className="mx-auto space-y-8 w-full">
                 <ButtonAccount/>
-                <ThumbnailGenerator/>
-                <ImageGallery/>
+                {/* <ThumbnailGenerator/>
+                <ImageGallery/> */}
+                <CharacterEditor />
             </section>
         </main>
     );

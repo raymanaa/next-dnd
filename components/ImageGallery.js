@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import apiClient from "@/libs/api";
+import Image from "next/image";
 
 const ImageGallery = () => {
     const [images, setImages] = useState([]);
@@ -15,11 +16,13 @@ const ImageGallery = () => {
         const fetchImages = async () => {
             try {
                 const response = await apiClient.get("supabaseStorage/fetchUserImages");
+                
                 if (Array.isArray(response.data)) {
-                    setImages(response.data); // Assuming the response has a .data property with the images
+                  setImages(response.data); // Assuming the response has a .data property with the images
                 } else {
                     console.error('Expected an array but received', response);
                 }
+                setImages([{url:"https://source.unsplash.com/random", alt: "image"}]);
             } catch (error) {
                 console.error('An error occurred while fetching user images:', error);
             }
@@ -65,7 +68,7 @@ const ImageGallery = () => {
                 <div key={index} className="p-2 w-full sm:w-1/2 md:w-1/3">
                     <div className="relative hover:scale-105 transition-transform duration-200">
                         <img
-                            src={`https://aenehhumfeuxwlvpybvc.supabase.co/storage/v1/object/public/onlineyoutubethumbnailmaker/369abdd5-e4a9-4de9-8b5d-7e008aeaaab6/${image.name}`}
+                            src={`${image.url}`}
                             alt={image.alt}
                             loading="lazy"
                             className="w-full h-auto rounded"/>
