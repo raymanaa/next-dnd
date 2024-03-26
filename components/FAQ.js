@@ -40,7 +40,7 @@ const faqList = [
     answer: (
       <div className="space-y-2 leading-relaxed">
         We offer a wide range of art styles to suit your preferences. From
-        realistic to cartoonish, fantasy to sci-fi, you'll find various styles
+        realistic to cartoonish, fantasy to sci-fi, you&apos;ll find various styles
         to bring your characters to life.
       </div>
     ),
@@ -50,7 +50,7 @@ const faqList = [
     answer: (
       <div className="space-y-2 leading-relaxed">
         Yes, our platform allows you to customize every aspect of your
-        character's appearance. From their facial features to their clothing and
+        character&apos;s appearance. From their facial features to their clothing and
         accessories, you have full control over the design process.
       </div>
     ),
@@ -70,7 +70,7 @@ const faqList = [
     answer: (
       <div className="space-y-2 leading-relaxed">
         Our free character creator allows you to generate preview portraits. To
-        access and download fullbody images, you'll need to make a one-time
+        access and download fullbody images, you&apos;ll need to make a one-time
         payment.
       </div>
     ),
@@ -89,7 +89,7 @@ const faqList = [
     question: "Can I cancel my character art purchase?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        If you haven't downloaded the character art and it's within 14 days of
+        If you haven&apos;t downloaded the character art and it&apos;s within 14 days of
         purchase, you can request a refund. However, once the art is downloaded,
         the purchase becomes final and non-refundable.
       </div>
@@ -131,8 +131,8 @@ const faqList = [
       <div className="space-y-2 leading-relaxed">
         While we strive to offer a diverse range of features and art styles, we
         are always open to feedback and suggestions from our users. If you have
-        specific requests or ideas, please don't hesitate to let us know, and
-        we'll do our best to accommodate them.
+        specific requests or ideas, please don&apos;t hesitate to let us know, and
+        we&apos;ll do our best to accommodate them.
       </div>
     ),
   },

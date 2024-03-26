@@ -8,10 +8,6 @@ const PlanCard = ({
   plan,
   session,
   subscriptionPlan,
-}: {
-  plan: SubscriptionPlan;
-  session: any;
-  subscriptionPlan: any;
 }) => {
   const buyPlan = async () => {
     const res = await fetch("/api/stripe/checkout", {
@@ -25,7 +21,7 @@ const PlanCard = ({
 
     if (responseJson.session) {
       const stripe = await getStripe();
-      stripe!.redirectToCheckout({
+      stripe.redirectToCheckout({
         sessionId: responseJson.session.id,
       });
     }

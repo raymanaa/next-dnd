@@ -2,14 +2,14 @@
 import React from "react";
 import { Button } from "../ui/button";
 import getStripe from "@/configs/stripe";
-interface ManageUserSubscriptionButtonProps {
-  userId: string;
-  email: string;
-  isCurrentPlan: boolean;
-  isSubscribed: boolean;
-  stripeCustomerId?: string | null;
-  stripePriceId: string;
-}
+// interface ManageUserSubscriptionButtonProps {
+//   userId: string;
+//   email: string;
+//   isCurrentPlan: boolean;
+//   isSubscribed: boolean;
+//   stripeCustomerId?: string | null;
+//   stripePriceId: string;
+// }
 const PlanManageButton = ({
   userId,
   email,
@@ -17,7 +17,7 @@ const PlanManageButton = ({
   isSubscribed,
   stripeCustomerId,
   stripePriceId,
-}: ManageUserSubscriptionButtonProps) => {
+}) => {
   const onManageSubscription = async () => {
     try {
       const res = await fetch("/api/stripe/billingsession", {
@@ -49,7 +49,7 @@ const PlanManageButton = ({
 
       if (responseJson.session) {
         const stripe = await getStripe();
-        stripe!.redirectToCheckout({
+        stripe.redirectToCheckout({
           sessionId: responseJson.session.id,
         });
       }
